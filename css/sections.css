@@ -210,12 +210,14 @@ footer {
 }
 .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
 .footer-logo {
-  font-family: var(--font-display); font-weight: 800; font-size: 1.5rem;
-  display: flex; align-items: baseline; text-decoration: none; margin-bottom: .75rem;
+  display: inline-flex; align-items: center; text-decoration: none; margin-bottom: .75rem;
 }
-.footer-logo .l { color: var(--white); }
-.footer-logo .h { color: var(--blue-light); }
-.footer-logo .dot { color: var(--white); }
+.footer-logo-img {
+  display: block;
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
 .footer-tagline { font-size: .85rem; line-height: 1.6; margin-bottom: 1rem; }
 .footer-credit  { font-size: .8rem; }
 .footer-credit a { color: var(--blue-light); text-decoration: none; }

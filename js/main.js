@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('meta[name="description"]').content = SITE.meta.description;
 
   // ── NAV ──────────────────────────────────────────────────
-  resolveLogoSource(document.querySelector('.nav-logo-img'));
+  document.querySelectorAll('[data-logo-base]').forEach(resolveLogoSource);
 
   const navLinksEl = $('navLinks');
   SITE.nav.forEach(item => {

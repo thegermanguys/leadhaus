@@ -108,11 +108,14 @@
   padding: 1rem;
 }
 .ps-logo {
-  font-family: var(--font-display); font-weight: 800; font-size: 1rem;
-  display: flex; align-items: baseline; margin-bottom: 1.2rem;
+  display: flex; align-items: center; margin-bottom: 1.2rem;
 }
-.ps-logo .l { color: var(--navy); }
-.ps-logo .h { color: var(--blue); }
+.ps-logo-img {
+  display: block;
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
 .ps-section {
   font-size: .65rem; font-weight: 600; color: var(--gray-400);
   text-transform: uppercase; letter-spacing: .06em;
