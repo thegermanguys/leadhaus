@@ -123,7 +123,7 @@ const SITE = {
       monthly: "€0", yearly: "€0",
       limit: "25 students",
       features: ["Student management", "Basic support", "Email notifications", "30-day trial period"],
-      cta: { label: "Get Started Free", href: "/register", style: "outline" },
+      cta: { label: "Get Started Free", href: "https://leadhaus.thegermanguy.org/app", style: "outline" },
     },
     {
       name: "Starter",
@@ -131,7 +131,7 @@ const SITE = {
       monthly: "€25", yearly: "€20",
       limit: "100 students",
       features: ["All Free features", "Priority support", "Advanced analytics", "API access"],
-      cta: { label: "Start Free Trial", href: "/register?plan=starter", style: "outline" },
+      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app", style: "outline" },
     },
     {
       name: "Professional",
@@ -140,7 +140,7 @@ const SITE = {
       limit: "500 students",
       popular: true,
       features: ["All Starter features", "Dedicated support", "Custom branding", "Bulk operations", "Advanced reporting"],
-      cta: { label: "Start Free Trial", href: "/register?plan=professional", style: "filled" },
+      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app", style: "filled" },
     },
     {
       name: "Business",
@@ -148,7 +148,7 @@ const SITE = {
       monthly: "€150", yearly: "€105",
       limit: "1000 students",
       features: ["All Professional features", "Dedicated support", "Custom branding", "Custom integration"],
-      cta: { label: "Start Free Trial", href: "/register?plan=business", style: "outline" },
+      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app", style: "outline" },
     },
     {
       name: "Enterprise",
@@ -156,7 +156,7 @@ const SITE = {
       monthly: "€450", yearly: "€270",
       limit: "Unlimited students",
       features: ["Unlimited students", "24/7 dedicated support", "White-label solution", "SLA guarantee", "Custom integrations"],
-      cta: { label: "Contact Us", href: "https://thegermanguy.org/it-consulting", style: "outline", external: true },
+      cta: { label: "Apply Now", href: "https://leadhaus.thegermanguy.org/app", style: "outline", external: true },
     },
   ],
 
