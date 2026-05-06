@@ -22,7 +22,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 }
 .nav-logo-img {
   display: block;
-  height: 34px;
+  height: 52px;
   width: auto;
   object-fit: contain;
 }
