@@ -11,7 +11,7 @@ const SITE = {
   brand: {
     name:    "Leadhaus",        // Used in <title>, nav, footer
     tagline: "CRM by TGG · Est. 2026",
-    appUrl:  "https://app.leadhaus.io",   // Your CRM app URL
+    appUrl:  "https://leadhaus.thegermanguy.org/app",   // Your CRM app URL
     tggUrl:  "https://thegermanguy.org/it-consulting",
   },
 
@@ -44,13 +44,13 @@ const SITE = {
   hero: {
     heading:   "The CRM Built for",
     highlight: "Educational Consultancies",
-    subtext:   "Manage students, track applications, collect payments, and grow your consultancy — all from one powerful platform built specifically for education professionals.",
+    subtext:   "Manage students, track applications, collect payments, and grow your consultancy, all from one powerful platform built specifically for education professionals.",
     trust:     ["Built for consultancies", "30-day free trial", "No credit card required"],
   },
 
   // ── Stats bar ──────────────────────────────────────────────
   stats: [
-    { num: "60+", label: "Study Fields Supported"  },
+    { num: "100+", label: "Study Fields Supported"  },
     { num: "5",   label: "Subscription Tiers"      },
     { num: "30",  label: "Day Free Trial"           },
     { num: "∞",   label: "Universities to Partner" },
@@ -71,7 +71,7 @@ const SITE = {
     {
       icon: "🗺️", iconBg: "fi-white",
       title: "Student Journey Pipeline",
-      desc: "Visual pipeline showing all students across every stage — Initial Inquiry, Applied, Conditional Offer, Visa Applied, Arrived, and more.",
+      desc: "Visual pipeline showing all students across every stage: Initial Inquiry, Applied, Conditional Offer, Visa Applied, Arrived, and more.",
       featured: true,
     },
     {
@@ -98,20 +98,20 @@ const SITE = {
     steps: [
       { title: "Initial Inquiry",       desc: "Capture and qualify new student leads as they come in.",              active: true  },
       { title: "Collecting Documents",  desc: "Gather required academic and personal documents efficiently."                       },
-      { title: "Referred to Partner",   desc: "Submit applications to partner universities through the platform."                  },
+      { title: "Referred to Partner",   desc: "Submit applications to partner universities."                  },
       { title: "Applied",               desc: "Track application status directly with the university."                             },
-      { title: "Offer → Visa → Arrival",desc: "Manage offers, visa process, and confirm student arrival."                         },
+      { title: "Offer → Visa → Payment → Arrival",desc: "Manage offers, visa process, and confirm student arrival."                         },
     ],
     pipeline: [
       { label: "Initial Inquiry",      count: 5,  width: "55%",  color: "#94a3b8" },
       { label: "Collecting Docs",      count: 1,  width: "11%",  color: "#38bdf8" },
-      { label: "Referred to Partner",  count: 0,  width: "0%",   color: "#64748b" },
+      { label: "Referred to Partner",  count: 0,  width: "0%",   color: "#5598d5" },
       { label: "Applied",              count: 9,  width: "100%", color: "#6366f1" },
       { label: "Conditional Offer",    count: 3,  width: "33%",  color: "#f59e0b" },
       { label: "Unconditional Offer",  count: 3,  width: "33%",  color: "#22c55e" },
       { label: "Visa Applied",         count: 5,  width: "55%",  color: "#8b5cf6" },
       { label: "Visa Approved",        count: 1,  width: "11%",  color: "#10b981" },
-      { label: "Arrived",              count: 0,  width: "0%",   color: "#cbd5e1" },
+      { label: "Arrived",              count: 0,  width: "0%",   color: "#15e07e" },
     ],
   },
 
