@@ -65,22 +65,45 @@ Open it and change any value. The site rebuilds automatically when you reload th
 
 ## 🚀 Deployment
 
-This is a fully static site — no build step needed.
+This is a fully static site — no build step required.
+
+### Vercel (recommended)
+
+This repository includes:
+- `vercel.json` for clean URL behavior and basic security headers
+- `package.json` scripts for local preview and JS syntax checks
+
+#### Deploy from Vercel Dashboard
+1. Push this project to GitHub/GitLab/Bitbucket.
+2. In Vercel, click **Add New → Project**.
+3. Import this repo.
+4. Keep defaults (Framework Preset: **Other**, Build Command: empty, Output Directory: empty).
+5. Click **Deploy**.
+
+#### Deploy from Vercel CLI
+```bash
+npm run check:js
+npx vercel
+```
+
+For production deploy:
+```bash
+npx vercel --prod
+```
 
 ### GitHub Pages
-1. Push the `leadhaus/` folder to a GitHub repo
-2. Go to **Settings → Pages → Source: main branch / root**
+1. Push the `leadhaus/` folder to a GitHub repo.
+2. Go to **Settings → Pages → Source: main branch / root**.
 3. Done ✅
 
-### Netlify / Vercel
-1. Drag and drop the `leadhaus/` folder into Netlify Drop
-   → https://app.netlify.com/drop
-2. Or connect your Git repo in Vercel and deploy
-
 ### Any web server
-Upload all files maintaining the folder structure. Serve `index.html` as the root.
+Upload all files while keeping the folder structure. Serve `index.html` as root.
 
-> ⚠️ Because `main.js` uses `fetch`-free DOM injection (no server required), the site works from `file://` locally too — just open `index.html` in a browser.
+### Local preview
+```bash
+npm run dev
+```
+Then open `http://localhost:4173`.
 
 ---
 

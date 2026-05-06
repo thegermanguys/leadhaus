@@ -17,20 +17,15 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 
 /* Logo */
 .nav-logo {
-  display: flex; align-items: baseline;
+  display: inline-flex; align-items: center;
   text-decoration: none;
 }
-.nav-logo .lead {
-  font-family: var(--font-display);
-  font-weight: 800; font-size: 1.65rem;
-  color: var(--navy); letter-spacing: -0.5px;
+.nav-logo-img {
+  display: block;
+  height: 34px;
+  width: auto;
+  object-fit: contain;
 }
-.nav-logo .haus {
-  font-family: var(--font-display);
-  font-weight: 700; font-size: 1.65rem;
-  color: var(--blue); letter-spacing: -0.5px;
-}
-.nav-logo .dot { color: var(--navy); font-weight: 800; }
 
 /* Links */
 .nav-links {

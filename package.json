@@ -1,0 +1,14 @@
+{
+  "name": "leadhaus-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Leadhaus static marketing website",
+  "scripts": {
+    "dev": "python3 -m http.server 4173",
+    "start": "python3 -m http.server 4173",
+    "check:js": "node --check js/config.js && node --check js/main.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

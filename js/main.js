@@ -15,11 +15,42 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   const extAttr = ext => ext ? ' target="_blank" rel="noopener"' : '';
 
+  const resolveLogoSource = (imgEl) => {
+    if (!imgEl) return;
+
+    const basePath = imgEl.dataset.logoBase;
+    if (!basePath) return;
+
+    const extensions = ['png', 'svg', 'webp', 'jpg', 'jpeg', 'gif', 'avif'];
+    let idx = 0;
+
+    const tryNext = () => {
+      if (idx >= extensions.length) return;
+
+      const candidate = `${basePath}.${extensions[idx++]}`;
+      const tester = new Image();
+
+      tester.onload = () => {
+        imgEl.src = candidate;
+      };
+
+      tester.onerror = () => {
+        tryNext();
+      };
+
+      tester.src = candidate;
+    };
+
+    tryNext();
+  };
+
   // ── Meta / title ─────────────────────────────────────────
   document.title = SITE.meta.title;
   document.querySelector('meta[name="description"]').content = SITE.meta.description;
 
   // ── NAV ──────────────────────────────────────────────────
+  resolveLogoSource(document.querySelector('.nav-logo-img'));
+
   const navLinksEl = $('navLinks');
   SITE.nav.forEach(item => {
     const li = document.createElement('li');
@@ -31,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('heroBadge').innerHTML  = `<span class="dot-live"></span> ${SITE.brand.tagline}`;
   $('heroH1').innerHTML     = `${SITE.hero.heading}<br/><span class="highlight">${SITE.hero.highlight}</span>`;
   $('heroSub').textContent  = SITE.hero.subtext;
+  $('navSignup').href       = SITE.brand.appUrl + '/register';
   $('heroTrial').href       = SITE.brand.appUrl + '/register';
 
   const trustEl = $('heroTrust');
