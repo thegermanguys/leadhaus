@@ -109,5 +109,5 @@ Then open `http://localhost:4173`.
 
 ## 🔗 Links
 
-- Live CRM app: https://app.leadhaus.io
+- Live CRM app: https://leadhaus.thegermanguy.org/app
 - TGG IT Consulting: https://thegermanguy.org/it-consulting
