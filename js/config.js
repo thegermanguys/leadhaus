@@ -122,7 +122,7 @@ const SITE = {
       desc: "Try Leadhaus with limited features",
       monthly: "€0", yearly: "€0",
       limit: "25 students",
-      features: ["Student management", "Journey pipeline", "Basic reporting", "30-day trial period"],
+      features: ["Student management", "Basic support", "Email notifications", "30-day trial period"],
       cta: { label: "Get Started Free", href: "/register", style: "outline" },
     },
     {
@@ -130,7 +130,7 @@ const SITE = {
       desc: "Perfect for small consultancies",
       monthly: "€25", yearly: "€20",
       limit: "100 students",
-      features: ["All Free features", "Applications tracking", "Payment management", "Team members"],
+      features: ["All Free features", "Priority support", "Advanced analytics", "API access"],
       cta: { label: "Start Free Trial", href: "/register?plan=starter", style: "outline" },
     },
     {
@@ -139,7 +139,7 @@ const SITE = {
       monthly: "€100", yearly: "€75",
       limit: "500 students",
       popular: true,
-      features: ["All Starter features", "Partner university network", "Study fields management", "Intake period tracking", "Priority support"],
+      features: ["All Starter features", "Dedicated support", "Custom branding", "Bulk operations", "Advanced reporting"],
       cta: { label: "Start Free Trial", href: "/register?plan=professional", style: "filled" },
     },
     {
@@ -147,7 +147,7 @@ const SITE = {
       desc: "For established consultancies",
       monthly: "€150", yearly: "€105",
       limit: "1000 students",
-      features: ["All Professional features", "Advanced analytics", "Custom branding", "Dedicated support"],
+      features: ["All Professional features", "Dedicated support", "Custom branding", "Custom integration"],
       cta: { label: "Start Free Trial", href: "/register?plan=business", style: "outline" },
     },
     {
@@ -155,7 +155,7 @@ const SITE = {
       desc: "Unlimited students for large organizations",
       monthly: "€450", yearly: "€270",
       limit: "Unlimited students",
-      features: ["Everything in Business", "SLA guarantee", "Custom integrations", "Dedicated account manager"],
+      features: ["Unlimited students", "24/7 dedicated support", "White-label solution", "SLA guarantee", "Custom integrations"],
       cta: { label: "Contact Us", href: "https://thegermanguy.org/it-consulting", style: "outline", external: true },
     },
   ],
@@ -199,7 +199,7 @@ const SITE = {
         { label: "Features",        href: "#features" },
         { label: "Student Journey", href: "#journey"  },
         { label: "Pricing",         href: "#pricing"  },
-        { label: "Login",           href: "https://app.leadhaus.io" },
+        { label: "Login",           href: "https://leadhaus.thegermanguy.org/app" },
       ],
     },
     {
@@ -216,7 +216,7 @@ const SITE = {
       links: [
         { label: "About TGG",     href: "https://thegermanguy.org/it-consulting", external: true },
         { label: "IT Consulting", href: "https://thegermanguy.org/it-consulting", external: true },
-        { label: "Contact",       href: "mailto:hello@leadhaus.io" },
+        { label: "Contact",       href: "mailto:leadhaus@thegermanguy.org" },
       ],
     },
   ],
