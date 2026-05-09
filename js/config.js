@@ -100,7 +100,7 @@ const SITE = {
       { title: "Collecting Documents",  desc: "Gather required academic and personal documents efficiently."                       },
       { title: "Referred to Partner",   desc: "Submit applications to partner universities."                  },
       { title: "Applied",               desc: "Track application status directly with the university."                             },
-      { title: "Offer → Visa → Payment → Arrival",desc: "Manage offers, visa process, and confirm student arrival."                         },
+      { title: "Offer → Visa → Payment → Arrival",desc: "Manage offers, visa process, payment and confirm student arrival."                         },
     ],
     pipeline: [
       { label: "Initial Inquiry",      count: 5,  width: "55%",  color: "#94a3b8" },
