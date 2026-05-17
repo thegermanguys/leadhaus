@@ -9,7 +9,7 @@ const SITE = {
 
   // ── Brand ──────────────────────────────────────────────────
   brand: {
-    name:    "Leadhaus",        // Used in <title>, nav, footer
+    name:    "Leadhaus Leadhaus",        // Used in <title>, nav, footer
     tagline: "CRM by TGG · Est. 2026",
     appUrl:  "https://leadhaus.thegermanguy.org/app",   // Your CRM app URL
     tggUrl:  "https://thegermanguy.org/it-consulting",
