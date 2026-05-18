@@ -105,13 +105,13 @@ const SITE = {
     pipeline: [
       { label: "Initial Inquiry",      count: 5,  width: "55%",  color: "#94a3b8" },
       { label: "Collecting Docs",      count: 1,  width: "11%",  color: "#38bdf8" },
-      { label: "Referred to Partner",  count: 0,  width: "0%",   color: "#5598d5" },
+      { label: "Referred to Partner",  count: 0,  width: "5%",   color: "#5598d5" },
       { label: "Applied",              count: 9,  width: "100%", color: "#6366f1" },
       { label: "Conditional Offer",    count: 3,  width: "33%",  color: "#f59e0b" },
       { label: "Unconditional Offer",  count: 3,  width: "33%",  color: "#22c55e" },
       { label: "Visa Applied",         count: 5,  width: "55%",  color: "#8b5cf6" },
-      { label: "Visa Approved",        count: 1,  width: "11%",  color: "#10b981" },
-      { label: "Arrived",              count: 0,  width: "0%",   color: "#15e07e" },
+      { label: "Visa Approved",        count: 1,  width: "75%",  color: "#10b981" },
+      { label: "Arrived",              count: 0,  width: "10%",   color: "#15e07e" },
     ],
   },
 
