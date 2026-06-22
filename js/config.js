@@ -171,8 +171,7 @@ const SITE = {
       {
         title:     "How to Sign Up for Leadhaus",
         desc:      "A quick walkthrough of creating your Leadhaus account and getting started.",
-       // youtubeId: "watch?v=7Jn5Lkz1SDc", // ✏️ paste the real YouTube video ID here
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7Jn5Lkz1SDc?si=XREnDpwZSjTODsn5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       youtubeId: "7Jn5Lkz1SDc", // ✏️ paste the real YouTube video ID here
       },
       // Add more as they go live, e.g.:
       // {
