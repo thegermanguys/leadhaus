@@ -36,6 +36,7 @@ const SITE = {
   nav: [
     { label: "Features",        href: "#features"  },
     { label: "Student Journey", href: "#journey"   },
+    { label: "Tutorials",       href: "#tutorials" },
     { label: "Pricing",         href: "#pricing"   },
     { label: "About TGG",       href: "https://thegermanguy.org/it-consulting", external: true },
   ],
@@ -112,6 +113,28 @@ const SITE = {
       { label: "Visa Applied",         count: 5,  width: "55%",  color: "#8b5cf6" },
       { label: "Visa Approved",        count: 1,  width: "75%",  color: "#10b981" },
       { label: "Arrived",              count: 0,  width: "10%",   color: "#15e07e" },
+    ],
+  },
+
+  // ── Tutorials (YouTube) ────────────────────────────────────
+  //  ✏️  Add a new object to `videos` for every new tutorial you publish.
+  //      youtubeId is the part after "watch?v=" in the YouTube URL,
+  //      e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ it's "dQw4w9WgXcQ"
+  tutorials: {
+    heading: "See Leadhaus in Action",
+    subtext: "Short video walkthroughs to help you and your team get up and running fast.",
+    videos: [
+      {
+        title:     "How to Sign Up for Leadhaus",
+        desc:      "A quick walkthrough of creating your Leadhaus account and getting started.",
+        youtubeId: "REPLACE_WITH_VIDEO_ID", // ✏️ paste the real YouTube video ID here
+      },
+      // Add more as they go live, e.g.:
+      // {
+      //   title:     "Adding Your First Student",
+      //   desc:      "Learn how to register and manage students inside Leadhaus.",
+      //   youtubeId: "ANOTHER_VIDEO_ID",
+      // },
     ],
   },
 
@@ -198,6 +221,7 @@ const SITE = {
       links: [
         { label: "Features",        href: "#features" },
         { label: "Student Journey", href: "#journey"  },
+        { label: "Tutorials",       href: "#tutorials" },
         { label: "Pricing",         href: "#pricing"  },
         { label: "Login",           href: "https://leadhaus.thegermanguy.org/app" },
       ],

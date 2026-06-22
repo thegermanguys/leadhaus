@@ -112,6 +112,35 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>`;
   });
 
+  // ── TUTORIALS ────────────────────────────────────────────
+  $('tutorialsHeading').textContent = SITE.tutorials.heading;
+  $('tutorialsSubtext').textContent = SITE.tutorials.subtext;
+
+  const tutorialsGrid = $('tutorialsGrid');
+  if (SITE.tutorials.videos && SITE.tutorials.videos.length) {
+    SITE.tutorials.videos.forEach(v => {
+      const thumbUrl = `https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`;
+      const watchUrl = `https://www.youtube.com/watch?v=${v.youtubeId}`;
+      const card = el('a', 'tutorial-card reveal');
+      card.href = watchUrl;
+      card.target = '_blank';
+      card.rel = 'noopener';
+      card.innerHTML = `
+        <div class="tutorial-thumb" style="background-image:url('${thumbUrl}')">
+          <div class="tutorial-play"></div>
+        </div>
+        <div class="tutorial-body">
+          <h3>${v.title}</h3>
+          <p>${v.desc}</p>
+          <span class="tutorial-watch">▶ Watch on YouTube</span>
+        </div>
+      `;
+      tutorialsGrid.appendChild(card);
+    });
+  } else {
+    tutorialsGrid.appendChild(el('div', 'tutorials-empty', 'New tutorials coming soon.'));
+  }
+
   // ── PRICING ──────────────────────────────────────────────
   const plansGrid = $('plansGrid');
   SITE.plans.forEach(plan => {
