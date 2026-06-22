@@ -114,6 +114,27 @@ const SITE = {
       { label: "Arrived",              count: 0,  width: "10%",   color: "#15e07e" },
     ],
   },
+    // ── Tutorials (YouTube) ────────────────────────────────────
+  //  ✏️  Add a new object to `videos` for every new tutorial you publish.
+  //      youtubeId is the part after "watch?v=" in the YouTube URL,
+  //      e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ it's "dQw4w9WgXcQ"
+  tutorials: {
+    heading: "See Leadhaus in Action",
+    subtext: "Short video walkthroughs to help you and your team get up and running fast.",
+    videos: [
+      {
+        title:     "How to Sign Up for Leadhaus",
+        desc:      "A quick walkthrough of creating your Leadhaus account and getting started.",
+        youtubeId: "https://youtu.be/7Jn5Lkz1SDc", // ✏️ paste the real YouTube video ID here
+      },
+      // Add more as they go live, e.g.:
+      // {
+      //   title:     "Adding Your First Student",
+      //   desc:      "Learn how to register and manage students inside Leadhaus.",
+      //   youtubeId: "ANOTHER_VIDEO_ID",
+      // },
+    ],
+  },
 
   // ── Pricing plans ──────────────────────────────────────────
   plans: [
