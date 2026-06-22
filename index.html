@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO meta – values set by js/config.js -->
+  <title>Leadhaus</title>
+  <meta name="description" content="" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAVIGATION
+     Links populated from SITE.nav in config.js
+════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" aria-label="Leadhaus Home">
+    <img
+      src="img/assests/leadhaus-logo.png"
+      data-logo-base="img/assests/leadhaus-logo"
+      alt="Leadhaus logo"
+      class="nav-logo-img"
+    />
+  </a>
+  <ul class="nav-links" id="navLinks"></ul>
+  <div class="nav-ctas" id="navCtas">
+    <a href="#pricing" class="btn-ghost">View Plans</a>
+    <a href="#" id="navSignup" class="btn-primary">Get Started Free</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+     Content populated from SITE.hero in config.js
+════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-badge" id="heroBadge"></div>
+  <h1 id="heroH1"></h1>
+  <p class="hero-sub" id="heroSub"></p>
+
+  <div class="hero-ctas">
+    <a href="leadhaus.thegermanguy.org" id="heroTrial" class="btn-hero-primary">Start Free Trial →</a>
+    <a href="#features" class="btn-hero-secondary">See How It Works</a>
+  </div>
+
+  <div class="hero-trust" id="heroTrust"></div>
+
+  <!-- Dashboard preview -->
+  <div class="hero-preview">
+    <div class="preview-frame">
+      <div class="preview-topbar">
+        <div class="traffic-light tl-red"></div>
+        <div class="traffic-light tl-yellow"></div>
+        <div class="traffic-light tl-green"></div>
+        <div class="preview-url">leadhaus.thegermanguy.org/dashboard</div>
+      </div>
+      <div class="preview-body">
+        <div class="preview-sidebar">
+          <div class="ps-logo">
+            <img
+              src="img/assests/leadhaus-logo.png"
+              data-logo-base="img/assests/leadhaus-logo"
+              alt="Leadhaus logo"
+              class="ps-logo-img"
+            />
+          </div>
+          <div class="ps-section">Student Management</div>
+          <div class="ps-item active">🎓 Students <span class="ps-badge badge-blue">27</span></div>
+          <div class="ps-item">📄 Applications <span class="ps-badge badge-orange">0</span></div>
+          <div class="ps-item">↗ Referrals Sent</div>
+          <div class="ps-section">Finance</div>
+          <div class="ps-item">💳 Payments <span class="ps-badge badge-orange">23</span></div>
+          <div class="ps-section">Settings</div>
+          <div class="ps-item">🎓 Study Fields <span class="ps-badge badge-green">60</span></div>
+          <div class="ps-item">🏛 Partner Universities</div>
+          <div class="ps-item">📅 Intake Periods</div>
+          <div class="ps-section">Management</div>
+          <div class="ps-item">👥 Team</div>
+        </div>
+        <div class="preview-main">
+          <div class="pm-title">Dashboard</div>
+          <div class="pm-cards">
+            <div class="pm-card"><div class="label">Unfinished Apps</div><div class="value">0</div><div class="sub">Draft or submitted</div></div>
+            <div class="pm-card"><div class="label">Under Review</div><div class="value">0</div><div class="sub">By university</div></div>
+            <div class="pm-card"><div class="label">Applied via TGG</div><div class="value">0</div><div class="sub">Self-managed</div></div>
+            <div class="pm-card"><div class="label">Accepted / Month</div><div class="value">0</div><div class="sub" style="color:var(--blue)">May 2026</div></div>
+          </div>
+          <div class="pm-chart-area">
+            <div class="pm-chart-label">Student Journey Pipeline</div>
+            <div class="pm-bars">
+              <div class="pm-bar" style="height:55%;background:#94a3b8;"></div>
+              <div class="pm-bar" style="height:10%;background:#38bdf8;"></div>
+              <div class="pm-bar" style="height:15%;background:#64748b;"></div>
+              <div class="pm-bar" style="height:100%;background:#6366f1;"></div>
+              <div class="pm-bar" style="height:33%;background:#f59e0b;"></div>
+              <div class="pm-bar" style="height:33%;background:#22c55e;"></div>
+              <div class="pm-bar" style="height:55%;background:#8b5cf6;"></div>
+              <div class="pm-bar" style="height:10%;background:#10b981;"></div>
+              <div class="pm-bar" style="height:0%;background:#ef4444;"></div>
+              <div class="pm-bar" style="height:10%;background:#1468ce;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     STATS BAR
+     Items populated from SITE.stats in config.js
+════════════════════════════════════════════════ -->
+<div class="stats">
+  <div class="stats-grid" id="statsGrid"></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     FEATURES
+     Cards populated from SITE.features in config.js
+════════════════════════════════════════════════ -->
+<section class="features" id="features">
+  <div class="features-header reveal">
+    <div class="section-label">Platform Features</div>
+    <h2>Everything your consultancy<br/>needs to grow</h2>
+    <p class="section-sub" style="margin:0 auto">From first inquiry to visa approval — Leadhaus handles the entire student lifecycle so you can focus on what matters.</p>
+  </div>
+  <div class="features-grid" id="featuresGrid"></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     STUDENT JOURNEY
+     Steps & pipeline from SITE.journey in config.js
+════════════════════════════════════════════════ -->
+<section class="journey" id="journey">
+  <div class="journey-inner">
+    <div class="reveal">
+      <div class="section-label">Student Journey</div>
+      <h2 id="journeyHeading"></h2>
+      <p class="section-sub" id="journeySubtext"></p>
+      <div class="journey-steps" id="journeySteps" style="margin-top:2rem"></div>
+    </div>
+    <div class="pipeline-visual reveal">
+      <div class="pipeline-title">📊 Student Journey Pipeline</div>
+      <div class="pipeline-stages" id="pipelineStages"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     PRICING
+     Plans populated from SITE.plans in config.js
+════════════════════════════════════════════════ -->
+<section class="plans" id="pricing">
+  <div class="plans-header reveal">
+    <div class="section-label">Transparent Pricing</div>
+    <h2>Choose the plan that fits<br/>your consultancy</h2>
+    <p class="section-sub" style="margin:.75rem auto 0">Start free. Scale as you grow. All plans include a 30-day free trial.</p>
+    <div class="plans-toggle">
+      <button class="toggle-btn active" id="monthlyBtn" onclick="setPricing('monthly')">Monthly</button>
+      <button class="toggle-btn" id="yearlyBtn" onclick="setPricing('yearly')">Yearly <span class="save-badge">Save up to 40%</span></button>
+    </div>
+  </div>
+  <div class="plans-grid" id="plansGrid"></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     TESTIMONIALS
+     Cards populated from SITE.testimonials in config.js
+════════════════════════════════════════════════ -->
+<section class="proof" id="testimonials">
+  <div class="proof-header reveal">
+    <div class="section-label">What Consultancies Say</div>
+    <h2>Trusted by educational consultants</h2>
+  </div>
+  <div class="proof-grid" id="proofGrid"></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CTA STRIP
+     Content from SITE.cta in config.js
+════════════════════════════════════════════════ -->
+<section class="cta-strip">
+  <h2 class="reveal" id="ctaHeading"></h2>
+  <p class="sub reveal" id="ctaSubtext"></p>
+  <div class="ctas reveal">
+    <a href="#" id="ctaSignup" class="btn-white">Start Free Trial →</a>
+    <a href="#" id="ctaTgg" target="_blank" rel="noopener" class="btn-outline-white">Meet the TGG Team</a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+     ✏️  Edit SITE.footer.description in config.js
+         to update the description text here.
+════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <!-- Brand column -->
+    <div>
+      <a href="#" class="footer-logo" id="footerLogoLink">
+        <img
+          src="img/assests/leadhaus-logo.png"
+          data-logo-base="img/assests/leadhaus-logo"
+          alt="Leadhaus logo"
+          class="footer-logo-img"
+        />
+      </a>
+      <!-- ✏️  Edit SITE.footer.description in js/config.js to change this text -->
+      <p class="footer-tagline" id="footerDesc"></p>
+      <p class="footer-credit"  id="footerCredit"></p>
+    </div>
+    <!-- Link columns injected by main.js -->
+    <div id="footerCols" style="display:contents"></div>
+  </div>
+  <div class="footer-bottom">
+    <span id="footerCopyright"></span>
+    <div class="footer-legal">
+      <a href="#" id="footerPrivacy">Privacy Policy</a>
+      <a href="#" id="footerTerms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts: config first, then main -->
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
