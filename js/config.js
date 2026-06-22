@@ -11,7 +11,7 @@ const SITE = {
   brand: {
     name:    "Leadhaus",        // Used in <title>, nav, footer
     tagline: "CRM by TGG · Est. 2026",
-    appUrl:  "https://leadhaus.thegermanguy.org/app",   // Your CRM app URL
+    appUrl:  "https://leadhaus.thegermanguy.org/app/register",   // Your CRM app URL
     tggUrl:  "https://thegermanguy.org/it-consulting",
   },
 
@@ -146,7 +146,7 @@ const SITE = {
       monthly: "€0", yearly: "€0",
       limit: "25 students",
       features: ["Student management", "Basic support", "Email notifications", "30-day trial period"],
-      cta: { label: "Get Started Free", href: "https://leadhaus.thegermanguy.org/app", style: "outline" },
+      cta: { label: "Get Started Free", href: "https://leadhaus.thegermanguy.org/app/register", style: "outline" },
     },
     {
       name: "Starter",
@@ -154,7 +154,7 @@ const SITE = {
       monthly: "€25", yearly: "€20",
       limit: "100 students",
       features: ["All Free features", "Priority support", "Advanced analytics", "API access"],
-      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app", style: "outline" },
+      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app/register", style: "outline" },
     },
     {
       name: "Professional",
@@ -163,7 +163,7 @@ const SITE = {
       limit: "500 students",
       popular: true,
       features: ["All Starter features", "Dedicated support", "Custom branding", "Bulk operations", "Advanced reporting"],
-      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app", style: "filled" },
+      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app/register", style: "filled" },
     },
     {
       name: "Business",
@@ -171,7 +171,7 @@ const SITE = {
       monthly: "€150", yearly: "€105",
       limit: "1000 students",
       features: ["All Professional features", "Dedicated support", "Custom branding", "Custom integration"],
-      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app", style: "outline" },
+      cta: { label: "Start Free Trial", href: "https://leadhaus.thegermanguy.org/app/register", style: "outline" },
     },
     {
       name: "Enterprise",
@@ -179,9 +179,31 @@ const SITE = {
       monthly: "€450", yearly: "€270",
       limit: "Unlimited students",
       features: ["Unlimited students", "24/7 dedicated support", "White-label solution", "SLA guarantee", "Custom integrations"],
-      cta: { label: "Apply Now", href: "https://leadhaus.thegermanguy.org/app", style: "outline", external: true },
+      cta: { label: "Apply Now", href: "https://leadhaus.thegermanguy.org/app/register", style: "outline", external: true },
     },
   ],
+
+      // ── Tutorials (YouTube) ────────────────────────────────────
+  //  ✏️  Add a new object to `videos` for every new tutorial you publish.
+  //      youtubeId is the part after "watch?v=" in the YouTube URL,
+  //      e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ it's "dQw4w9WgXcQ"
+  tutorials: {
+    heading: "See Leadhaus in Action",
+    subtext: "Short video walkthroughs to help you and your team get up and running fast.",
+    videos: [
+      {
+        title:     "How to Sign Up for Leadhaus",
+        desc:      "A quick walkthrough of creating your Leadhaus account and getting started.",
+       youtubeId: "7Jn5Lkz1SDc", // ✏️ paste the real YouTube video ID here
+      },
+      // Add more as they go live, e.g.:
+      // {
+      //   title:     "Adding Your First Student",
+      //   desc:      "Learn how to register and manage students inside Leadhaus.",
+      //   youtubeId: "ANOTHER_VIDEO_ID",
+      // },
+    ],
+  },
 
   // ── Testimonials ───────────────────────────────────────────
   testimonials: [
@@ -223,7 +245,7 @@ const SITE = {
         { label: "Student Journey", href: "#journey"  },
         { label: "Tutorials",       href: "#tutorials" },
         { label: "Pricing",         href: "#pricing"  },
-        { label: "Login",           href: "https://leadhaus.thegermanguy.org/app" },
+        { label: "Login",           href: "https://leadhaus.thegermanguy.org/app/register" },
       ],
     },
     {
