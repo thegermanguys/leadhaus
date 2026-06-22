@@ -183,7 +183,7 @@ const SITE = {
     },
   ],
 
-      // ── Tutorials (YouTube) ────────────────────────────────────
+  // ── Tutorials (YouTube) ────────────────────────────────────
   //  ✏️  Add a new object to `videos` for every new tutorial you publish.
   //      youtubeId is the part after "watch?v=" in the YouTube URL,
   //      e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ it's "dQw4w9WgXcQ"
