@@ -125,7 +125,7 @@ const SITE = {
       {
         title:     "How to Sign Up for Leadhaus",
         desc:      "A quick walkthrough of creating your Leadhaus account and getting started.",
-        youtubeId: "7Jn5Lkz1SDc", // ✏️ paste the real YouTube video ID here
+        youtubeId: "watch?v=7Jn5Lkz1SDc", // ✏️ paste the real YouTube video ID here
       },
       // Add more as they go live, e.g.:
       // {
