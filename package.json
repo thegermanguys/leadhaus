@@ -1,14 +1,28 @@
 {
-  "name": "leadhaus-site",
+  "name": "leadhaus",
   "version": "1.0.0",
   "private": true,
-  "description": "Leadhaus static marketing website",
   "scripts": {
-    "dev": "python3 -m http.server 4173",
-    "start": "python3 -m http.server 4173",
-    "check:js": "node --check js/config.js && node --check js/main.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "engines": {
-    "node": ">=18"
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "lucide-react": "^0.447.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
   }
 }
