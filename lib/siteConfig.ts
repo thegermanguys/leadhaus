@@ -17,8 +17,8 @@ export const siteConfig = {
     links: [
       { label: "Features", href: "#features" },
       { label: "Student Journey", href: "#student-journey" },
-      { label: "Tutorials", href: "#tutorials" },
       { label: "Pricing", href: "#pricing" },
+      { label: "Tutorials", href: "#tutorials" },
       {
         label: "About TGG",
         href: "https://thegermanguy.org",
@@ -322,12 +322,33 @@ export const siteConfig = {
     ],
   },
 
+  // Swap youtubeId values with real Leadhaus YouTube video IDs when ready.
+  // Embed URL format: https://www.youtube.com/embed/{youtubeId}
   tutorials: [
     {
       id: "signup",
+      topic: "Signup",
       title: "How to Sign Up for Leadhaus",
       description:
-        "Learn how to create your Leadhaus account, set up your consultancy profile, and onboard your first students in under 10 minutes.",
+        "Create your Leadhaus account, set up your consultancy profile, and onboard your first students in under 10 minutes.",
+      youtubeId: "7Jn5Lkz1SDc",
+    },
+    {
+      id: "how-it-works",
+      topic: "How it works",
+      title: "How Leadhaus Works",
+      description:
+        "A guided tour of the Leadhaus dashboard — student pipeline, applications, and the day-to-day workflow for consultancies.",
+      // TODO: replace with the real “How Leadhaus Works” video ID
+      youtubeId: "7Jn5Lkz1SDc",
+    },
+    {
+      id: "features",
+      topic: "Features",
+      title: "Leadhaus Features Walkthrough",
+      description:
+        "See student management, payment tracking, partner universities, and team tools in action.",
+      // TODO: replace with the real features walkthrough video ID
       youtubeId: "7Jn5Lkz1SDc",
     },
   ],
@@ -389,8 +410,8 @@ export const siteConfig = {
         links: [
           { label: "Features", href: "#features" },
           { label: "Student Journey", href: "#student-journey" },
-          { label: "Tutorials", href: "#tutorials" },
           { label: "Pricing", href: "#pricing" },
+          { label: "Tutorials", href: "#tutorials" },
           { label: "Login", href: "/app/login" },
         ],
       },

@@ -18,30 +18,29 @@ export default function Tutorials() {
   }, []);
 
   return (
-    <section id="tutorials" className="py-20 px-4 sm:px-6 bg-white" ref={ref}>
+    <section id="tutorials" className="py-20 px-4 sm:px-6 bg-off-white" ref={ref}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="reveal text-center mb-14">
           <span className="inline-block text-xs font-semibold text-amber-accent bg-amber-accent/10 border border-amber-accent/20 rounded-full px-3 py-1 uppercase tracking-widest mb-4">
-            Tutorials
+            Tutorial videos
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4">
-            See Leadhaus in Action
+            Leadhaus Tutorial videos
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-            Watch our step-by-step tutorials to get up and running in minutes. No
-            technical experience required.
+            Short walkthroughs for signup, how Leadhaus works, and key features —
+            so your team can get up and running in minutes.
           </p>
         </div>
 
-        {/* Video cards */}
-        <div className="max-w-4xl mx-auto">
+        {/* Video grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {siteConfig.tutorials.map((tutorial, i) => (
-            <div
+            <article
               key={tutorial.id}
-              className={`reveal reveal-delay-${i + 1} feature-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-card`}
+              className={`reveal reveal-delay-${(i % 3) + 1} feature-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-card flex flex-col`}
             >
-              {/* YouTube embed */}
               <div className="relative aspect-video bg-navy">
                 <iframe
                   src={`https://www.youtube.com/embed/${tutorial.youtubeId}?rel=0&modestbranding=1`}
@@ -53,24 +52,23 @@ export default function Tutorials() {
                 />
               </div>
 
-              {/* Card body */}
-              <div className="p-5">
+              <div className="p-5 sm:p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-7 h-7 rounded-lg bg-electric/10 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-lg bg-electric/10 flex items-center justify-center shrink-0">
                     <Play size={12} className="text-electric fill-electric" />
                   </div>
                   <span className="text-xs text-electric font-semibold uppercase tracking-wider">
-                    Tutorial
+                    {tutorial.topic}
                   </span>
                 </div>
-                <h3 className="font-heading font-semibold text-navy text-base mb-2">
+                <h3 className="font-heading font-semibold text-navy text-base sm:text-lg mb-2">
                   {tutorial.title}
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   {tutorial.description}
                 </p>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
