@@ -419,7 +419,7 @@ export const siteConfig = {
             href: "https://thegermanguy.org/it-consulting",
             external: true,
           },
-          { label: "Contact", href: "mailto:hello@thegermanguy.org" },
+          { label: "Contact", href: "mailto:leadhaus@thegermanguy.org" },
         ],
       },
     ],
