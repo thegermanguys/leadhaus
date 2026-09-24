@@ -6,6 +6,8 @@ import { Play } from "lucide-react";
 
 export default function Tutorials() {
   const ref = useRef<HTMLDivElement>(null);
+  const tutorials = siteConfig.tutorials;
+  const isMulti = tutorials.length > 1;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,14 +31,20 @@ export default function Tutorials() {
             Leadhaus Tutorial videos
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-            Short walkthroughs for signup, how Leadhaus works, and key features —
-            so your team can get up and running in minutes.
+            Watch step-by-step walkthroughs to get your team up and running in
+            minutes — no technical experience required.
           </p>
         </div>
 
-        {/* Video grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {siteConfig.tutorials.map((tutorial, i) => (
+        {/* Single video: centered; multiple: responsive grid (append to siteConfig.tutorials) */}
+        <div
+          className={
+            isMulti
+              ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+              : "max-w-3xl mx-auto"
+          }
+        >
+          {tutorials.map((tutorial, i) => (
             <article
               key={tutorial.id}
               className={`reveal reveal-delay-${(i % 3) + 1} feature-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-card flex flex-col`}

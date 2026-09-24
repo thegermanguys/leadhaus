@@ -322,7 +322,7 @@ export const siteConfig = {
     ],
   },
 
-  // Swap youtubeId values with real Leadhaus YouTube video IDs when ready.
+  // Add more tutorial videos by appending objects here.
   // Embed URL format: https://www.youtube.com/embed/{youtubeId}
   tutorials: [
     {
@@ -331,24 +331,6 @@ export const siteConfig = {
       title: "How to Sign Up for Leadhaus",
       description:
         "Create your Leadhaus account, set up your consultancy profile, and onboard your first students in under 10 minutes.",
-      youtubeId: "7Jn5Lkz1SDc",
-    },
-    {
-      id: "how-it-works",
-      topic: "How it works",
-      title: "How Leadhaus Works",
-      description:
-        "A guided tour of the Leadhaus dashboard — student pipeline, applications, and the day-to-day workflow for consultancies.",
-      // TODO: replace with the real “How Leadhaus Works” video ID
-      youtubeId: "7Jn5Lkz1SDc",
-    },
-    {
-      id: "features",
-      topic: "Features",
-      title: "Leadhaus Features Walkthrough",
-      description:
-        "See student management, payment tracking, partner universities, and team tools in action.",
-      // TODO: replace with the real features walkthrough video ID
       youtubeId: "7Jn5Lkz1SDc",
     },
   ],
